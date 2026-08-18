@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+<center>
+
+    <h1>Registration Form</h1>
+
+    <form id="registrationForm">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" required>
+        <br><br>
+
+        <label for="branch">Branch:</label>
+        <input type="text" id="branch" required>
+        <br><br>
+
+        <label for="section">Section:</label>
+        <input type="text" id="section" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <div id="result"></div>
+
+</center>
+
+
+<script>
+
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let course = document.getElementById("course").value;
+    let branch = document.getElementById("branch").value;
+    let section = document.getElementById("section").value;
+    let password = document.getElementById("password").value;
+
+    document.getElementById("result").innerHTML = `
+        <h2>Registration Successful!</h2>
+
+        <p><b>Name:</b> ${name}</p>
+        <p><b>Email:</b> ${email}</p>
+        <p><b>Course:</b> ${course}</p>
+        <p><b>Branch:</b> ${branch}</p>
+        <p><b>Section:</b> ${section}</p>
+        <p><b>Password:</b> ${password}</p>
+    `;
+
+});
+
+</script>
+
+</body>
+</html>

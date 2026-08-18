@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,4 +15,48 @@
     <img src="https://i.pinimg.com/1200x/ad/22/6a/ad226a45645c2067692dca01bceec48c.jpg" alt="">
 
 </body>
-</html>
+</html> -->
+*
+{
+    border: 20px;
+    padding: 5px;
+    border-color: red;
+    
+}
+.container
+{
+    border: 2px solid red;
+    height: 600px;
+    display: grid;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-columns: auto auto auto;
+
+}
+.box
+{
+    border: 2px solid green;
+}
+#box-1
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-image: url("https://tse1.mm.bing.net/th/id/OIP.BxmRC3iknGzYl-CT3h-XnQHaCn?rs=1&pid=ImgDetMain&o=7&rm=3");
+}
+#box-2
+{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#box-3
+{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#box-4
+{
+    grid-column: 1/4;
+}
+#b
